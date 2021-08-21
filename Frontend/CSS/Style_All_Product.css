@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------- headline part ---------------*/
+.product-name-show{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    margin: auto;
+}
+.product-name-show img{
+    height: 40vh;
+    width: 100%;
+}
+
+.product-name-show h1{
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------------- Main Product Part ----------*/
+
+.main-product-part{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    margin: 2%;
+    padding: 2%;
+    position: relative;
+}
+
+
+.main-product-part .side-part{
+    flex-basis: 16%;
+    height: fit-content;
+    background: #ccc;
+    border: 2px solid gray;
+    border-radius: 5px;
+    position: sticky;
+    top: 5%;
+}
+.main-product-part .side-part .search-div{
+    padding: 2%;
+    padding-bottom: 3%;
+}
+.main-product-part .side-part .search-div input{
+    height: 30px;
+    width: 92%;
+    color: gray;
+    padding: 0 2% 0 4%;
+    border-radius: 5px;
+    margin: 1%;
+    border: none;
+    outline: none;
+}
+.main-product-part .side-part .items-col{
+    font-size: 18px;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.main-product-part .side-part .items-col:hover{
+    background: black;
+    color: blanchedalmond;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.main-product-part .side-part .items-col p{
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.main-product-part .show-product-part{
+    flex-basis: 78%;
+}
+
+/*--------------- Show Prodduct ---------------*/
+.show-product-part{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 3vh 2vw;
+    background: rgb(248, 246, 246);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.show-product-part .div1{
+    height: 250px;
+    width: 15vw;
+    border-radius: 5px;
+    background: transparent;
+    margin-bottom: 20px;
+    position: relative;
+   /* box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);*/
+}
+
+.show-product-part .div1 .product-name{
+    position: absolute;
+    background: #ccc;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 0 0 5px 5px;
+    height: 4vh;
+}
+
+.show-product-part .div1 .product-name h4{
+    text-align: center;
+}
+
+.row-content{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.row-content:hover{
+    transform: rotateY(180deg);
+}
+
+.row-content .front-part{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background: greenyellow;
+    color: white;
+}
+.row-content .front-part img{
+    height: calc(100% - 4vh);
+    width: 100%;
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+}
+
+.row-content .back-part{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    background: #ccc;
+    color: gray;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-content .back-part div{
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
+
+.row-content .back-part div h3{
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.row-content .back-part div h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.row-content .back-part div button{
+    font-size: 20px;
+    font-weight: 200;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    cursor:pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.row-content .back-part div button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.row-content .back-part div .add-curt .fa{
+    font-size: 30px;
+    margin: 10px;
+}
+
+/*-------------- footer part----------------*/
+footer{
+    background-color: transparent;
+}
+
+footer .footer-row{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+
+footer .footer-row .footer-col{
+    height: 100%;
+    width: 100%;
+    margin: 2%;
+    
+}
+
+footer .footer-row .footer-col ul {
+    padding: 10px;
+}
+
+footer .footer-row .footer-col ul li{
+    list-style: none;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+footer .footer-row .footer-col address{
+    padding: 15px;
+}
+footer .footer-row .footer-col address p{
+    line-height: 23px;
+    margin-top: 5px;
+}
+
+.made{
+    height: 5vh;
+    background-color: black;
+    color: #ccc;
+    text-align: center;
+    padding: 5px;
+}
+
+.made p{
+    padding: 3px;
+}
+
+.made p a{
+    color: yellowgreen;
+}
